@@ -18,16 +18,29 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.vincycheng.reactnativefirebase",
+      "googleServicesFile": "./GoogleService-Info.plist"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.vincycheng.reactnativefirebase"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f8032bb5-7fd3-473b-b498-0bbe89580191"
+      }
+    },
+    "plugins": [
+      "@react-native-firebase/app",
+      "@react-native-firebase/perf",
+      "@react-native-firebase/crashlytics"
+    ]
   }
 }
