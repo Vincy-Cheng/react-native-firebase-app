@@ -24,6 +24,7 @@ To start developing locally, please follow the below steps.
 
    ```
    {
+    ...
     "expo": {
     "ios": {
       "googleServicesFile": "./GoogleService-Info.plist"
@@ -54,6 +55,16 @@ To start developing locally, please follow the below steps.
 
    P.S you may need to rebuild the app if the debug view is not working
 
+   ***
+
+   **Android device**
+
+   Run the below command
+
+   ```bash
+   adb shell setprop debug.firebase.analytics.app PACKAGE_NAME
+   ```
+
 7. Build the app by [EAS build](https://docs.expo.dev/build/introduction/)
 
    **Install the latest EAS CLI**
@@ -70,19 +81,23 @@ To start developing locally, please follow the below steps.
    eas build:configure
    ```
 
-   Build with Android
+   ***
+
+   **Build with Android**
 
    ```bash
    eas build --platform android
    ```
 
-   Build with iOS
+   ***
+
+   **Build with iOS**
 
    ```bash
    eas build -platform ios
    ```
 
-   OR build fro both Android and iOS
+   **OR build fro both Android and iOS**
 
    ```bash
    eas build --platform all
